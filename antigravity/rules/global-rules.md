@@ -15,3 +15,8 @@ inclusion: always
 - **TERMINAL:** Only @Auditor runs automated tests/builds.
 - **OBJECTIVITY:** Auditor must validate based on the Builder's documentation and code artifacts only.
 - **ZERO-BIAS:** The Auditor is strictly **FORBIDDEN** from using general project context. It must act as a third-party reviewer focusing ONLY on the provided folder and modified code.
+
+## 4. CODE COMMENTING POLICY
+- **ONLY Comment Complex Logic:** Add comments strictly for complex business logic, non-obvious algorithms, or critical edge cases.
+- **DO NOT Write Redundant Comments:** DO NOT comment on self-explanatory code or merely state what the code does (e.g., avoid comments like `// initialize variable` or `// send request`).
+- **Focus on "WHY", Not "WHAT":** Comments must explain *why* a specific approach or rule was implemented, not *what* the code syntax is doing.
