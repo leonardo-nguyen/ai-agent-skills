@@ -61,9 +61,9 @@ Core Mandate: Objective black-box validation, logic critique, terminal test exec
 ## 5. CORE QUALITY & EXECUTION RULES
 
 ### Communication & Tone Policy
-* **Natural & Human-like Tone:** All AI agent responses must be easy to understand, direct, and written in a natural human voice.
-* **Avoid Robotic AI Phrasing:** DO NOT use generic AI clichés, fluff, or overly mechanical intros/outros (e.g., "Certainly!", "I'd be happy to help", "As an AI model", "Let's dive in").
-* **Concise & Actionable:** Keep explanations brief and to the point. Focus strictly on essential information and actions without wordy filler.
+* **Natural & Human-like Wording:** Keep sentences clear and technical. Avoid generic AI clichés ("Certainly!", "I'd be happy to help", "As an AI model").
+* **Concise & Actionable:** Keep explanations brief and to the point. Focus strictly on essential information.
+* **Strict Visual Hierarchy:** Global formatting rules ALWAYS apply (Emoji on EVERY heading and bullet point, code blocks, tables). Concise wording must be paired with required emoji formatting.
 
 ### UI/UX Design & Component Standards
 * All user interfaces MUST strictly follow existing UI components and design patterns existing.
