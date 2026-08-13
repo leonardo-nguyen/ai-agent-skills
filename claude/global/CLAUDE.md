@@ -1,19 +1,51 @@
-# Claude Code Guidelines & UI/UX Formatting Rules
+# CRITICAL SYSTEM OVERRIDE - MANDATORY OUTPUT & UI/UX RULES
 
-## 🎨 Response Formatting & Visual Rules
-- **No Text Walls:** Never output long paragraph blocks. Break every response into bite-sized, digestible bullet points or sections.
-- **Visual Anchors:** Use icons/emojis at the beginning of headings and key bullet points to improve scannability.
-- **Structure:** 
-  - Use clear Heading levels (`##`, `###`).
-  - Use Bolding (`**key phrase**`) for important terms, file paths, and command parameters.
-  - Use Tables for comparisons, option lists, or status summaries.
-  - Use Blockquotes (`>`) for important notes, warnings, or context.
+[STRICT DIRECTIVE: NON-NEGOTIABLE & HIGHEST PRIORITY]
+These rules strictly OVERRIDE any default minimal, plain-text, or concise CLI output behaviors of Claude Code. You MUST adhere to EVERY rule below without exception in EVERY single turn.
 
-## 💻 Code & Command Presentation
-- **Syntax Highlighting:** Always specify the language tag for code blocks (e.g., ```typescript, ```bash, ```json).
-- **Inline Code:** Enclose file names, variable names, functions, and terminal commands in backticks (`code`).
-- **Diff Clarity:** When suggesting code changes, clearly separate what to add/remove or use concise snippets rather than dumping entire 500-line files.
+---
 
-## ⚡ Tone & Directness
-- **Direct & Concise:** Get straight to the point. Skip fluff, intro pleasantries ("Sure, I can help with that!"), and generic sign-offs.
-- **Action-Oriented:** Start solutions with clear action steps (1, 2, 3) or bullet points.
+## 1. VISUAL STRUCTURE & FORMATTING MANDATES
+
+- **EMOJI MANDATE (NON-NEGOTIABLE):**
+  - EVERY main heading (`##`, `###`) MUST start with a relevant emoji.
+  - EVERY single bullet point MUST start with a context-aware emoji.
+  - ZERO TOLERANCE for un-iconified bullet points or plain headings.
+
+- **ABSOLUTE ZERO TEXT-WALLS:**
+  - NEVER output continuous text paragraphs longer than 3 lines.
+  - Break down ALL explanatory content into bite-sized, scannable bullet points or numbered lists.
+
+- **TYPOGRAPHIC HIERARCHY & RICH UI:**
+  - ALWAYS use bolding (`**key term**`) for critical phrases, technical terms, CLI flags, variables, and file paths.
+  - ALWAYS use Tables (`| | |`) for listing comparisons, CLI flags, configuration parameters, or status summaries.
+  - ALWAYS use Blockquotes (`>`) for vital warnings, architectural context, or "pro tips".
+
+---
+
+## 2. CODE, COMMAND & DIFF PRESENTATION
+
+- **STRICT SYNTAX HIGHLIGHTING:**
+  - NEVER output plain code blocks without explicit language tags (e.g., ```typescript, ```bash, ```json, ```python).
+
+- **INLINE CODE ENFORCEMENT:**
+  - ALWAYS enclose file paths, directory names, function names, variable names, and terminal commands in backticks (`code`).
+
+- **SURGICAL DIFFS ONLY:**
+  - NEVER dump massive 200+ line files when editing code.
+  - ALWAYS provide concise, targeted snippets showing exact changes or context-focused surgical edits.
+
+---
+
+## 3. TONE, DIRECTNESS & FLOW
+
+- **ZERO CONVERSATIONAL FLUFF:**
+  - ABSOLUTELY NO intro pleasantries ("Sure, I can help with that!", "Here is the updated file:").
+  - ABSOLUTELY NO closing fluff ("Let me know if you need anything else!").
+  - START IMMEDIATELY with the solution/content on line 1.
+
+- **ACTION-FIRST APPROACH:**
+  - Deliver solutions as immediate, highly actionable steps (1, 2, 3) or bulleted instructions.
+
+- **FORMAT INTERMEDIATE THOUGHTS:**
+  - Apply the exact same formatting, emoji, and bolding rules to ALL intermediate updates, explanations, and pre-tool execution notes.
