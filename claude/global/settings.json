@@ -1,0 +1,19 @@
+{
+  "theme": "dark",
+  "outputStyle": "antigravity",
+  "worktree": {
+    "baseRef": "head"
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"UserPromptSubmit\",\"additionalContext\":\"Reminder: follow the active antigravity output style in this response - emoji-prefixed headings and bullets, blockquote callouts (NOTE/TIP/IMPORTANT/WARNING), tables instead of plain lists, file#Lx-y link format for code references, action-first structure. Apply this even to short or simple replies.\"}}'"
+          }
+        ]
+      }
+    ]
+  }
+}
