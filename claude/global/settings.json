@@ -15,5 +15,14 @@
         ]
       }
     ]
+  },
+  // NOTE: %USERPROFILE% assumes Claude Code runs hook/statusLine commands via cmd.exe on Windows. If a machine runs them via PowerShell instead, change to $env:USERPROFILE; on macOS/Linux, change to $HOME or ~.
+  "statusLine": {
+    "type": "command",
+    "command": "node %USERPROFILE%/.claude/statusline.mjs"
+  },
+  "subagentStatusLine": {
+    "type": "command",
+    "command": "node %USERPROFILE%/.claude/subagent-statusline.mjs"
   }
 }
