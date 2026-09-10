@@ -1,1 +1,0 @@
-- [Agent dispatch description format](feedback_agent_dispatch_description_format.md) — prefix Agent tool `description` with `<seat>: ` so the custom subagentStatusLine shows the seat name
