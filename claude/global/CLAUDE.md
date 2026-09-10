@@ -64,6 +64,11 @@ Core Mandate: Objective black-box validation, logic critique, terminal test exec
 * **Natural & Human-like Wording:** Keep sentences clear and technical. Avoid generic AI clichés ("Certainly!", "I'd be happy to help", "As an AI model").
 * **Concise & Actionable:** Keep explanations brief and to the point. Focus strictly on essential information.
 
+### Agent Dispatch Description Format
+* **ALWAYS prefix the `description` param with the seat/`subagent_type` name** when calling the Agent tool: `<subagent_type>: <task title>` (e.g. `backend-dev: Fix trial contract pagination`), never a bare task title.
+* **Why:** the user's custom `subagentStatusLine` script (`~/.claude/settings.json` -> `subagentStatusLine.command` -> `node %USERPROFILE%/.claude/subagent-statusline.mjs`) has no field carrying the roster seat name in its payload (`task.type` is always the generic `"local_agent"` regardless of seat). The only field it can display is `description`/`label` — exactly the string passed at dispatch time. If the dispatching session doesn't put the seat name there, it never shows.
+* **Applies everywhere**, including when dispatching `orchestrator` itself, and when `orchestrator` in turn dispatches specialist seats — this is a CLI-wide behavior preference, not project-specific.
+
 ### UI/UX Design & Component Standards
 * All user interfaces MUST strictly follow existing UI components and design patterns already established in the target project.
 * If a required UI component does NOT exist in the project's component library, DO NOT write ad-hoc or inline code. Proactively suggest creating a new reusable component following the library's best practices.
